@@ -2,7 +2,7 @@ import "dotenv/config";
 
 export default {
   expo: {
-    plugins: ["expo-sqlite"],
+    plugins: ["expo-sqlite", "expo-web-browser"],
     name: "TapTrack",
     slug: "taptrack",
 
