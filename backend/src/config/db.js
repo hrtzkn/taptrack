@@ -1,4 +1,4 @@
-/*const { Pool } = require("pg");
+const { Pool } = require("pg");
 
 const pool = new Pool({
   user: "postgres",
@@ -8,9 +8,9 @@ const pool = new Pool({
   port: 5432,
 });
 
-module.exports = pool;*/
+module.exports = pool;
 
-const { Pool } = require("pg");
+/*const { Pool } = require("pg");
 
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
@@ -19,4 +19,4 @@ const pool = new Pool({
   },
 });
 
-module.exports = pool;
+module.exports = pool;*/

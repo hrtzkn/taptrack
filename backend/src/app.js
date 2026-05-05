@@ -11,3 +11,6 @@ app.use("/api/auth", require("./routes/auth.routes"));
 app.use("/api/attendance", require("./routes/attendance.routes"));
 
 module.exports = app;
+
+//npx expo start -c
+//npm run dev

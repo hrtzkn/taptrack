@@ -1,3 +1,7 @@
 const app = require("./app");
 
-module.exports = app;
+const PORT = 5000;
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
