@@ -6,6 +6,8 @@ export default {
     name: "TapTrack",
     slug: "taptrack",
 
+    icon: "./assets/TapTrackLogo.png",
+
     extra: {
       apiUrl: process.env.API_URL,
       eas: {
@@ -15,6 +17,10 @@ export default {
 
     android: {
       package: "com.app.taptrack",
+      adaptiveIcon: {
+        foregroundImage: "./assets/TapTrackLogo.png",
+        backgroundColor: "#ffffff",
+      },
     },
   },
 };
