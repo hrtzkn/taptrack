@@ -1,4 +1,4 @@
-import API from "../backend/src/services/api";
+import API from "../services/api";
 import db from "./db";
 
 export const syncAttendance = async () => {

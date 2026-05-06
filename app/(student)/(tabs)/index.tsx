@@ -1,15 +1,15 @@
 import { useLocalSearchParams } from "expo-router";
 import { useEffect, useState } from "react";
 import {
-    Image,
-    Modal,
-    Pressable,
-    ScrollView,
-    StyleSheet,
-    Text,
-    View,
+  Image,
+  Modal,
+  Pressable,
+  ScrollView,
+  StyleSheet,
+  Text,
+  View,
 } from "react-native";
-import API from "../../../backend/src/services/api";
+import API from "../../../services/api";
 import RecentLogs from "../components/RecentLogs";
 import History from "../components/history";
 
