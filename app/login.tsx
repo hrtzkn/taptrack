@@ -1,19 +1,23 @@
 import { AxiosError } from "axios";
+import Constants from "expo-constants";
 import { useRouter } from "expo-router";
 import { useState } from "react";
 import {
-    Alert,
-    Image,
-    StyleSheet,
-    Text,
-    TextInput,
-    TouchableOpacity,
-    View,
+  Alert,
+  Image,
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
 } from "react-native";
 import API from "../backend/src/services/api";
 
 export default function LoginScreen() {
   const router = useRouter();
+  const apiUrl = Constants.expoConfig?.extra?.apiUrl;
+
+  console.log("API URL:", apiUrl);
 
   const [loginError, setLoginError] = useState("");
   const [fullName, setFullName] = useState("");
@@ -140,6 +144,9 @@ export default function LoginScreen() {
       <TouchableOpacity style={styles.button} onPress={handleLogin}>
         <Text style={styles.buttonText}>Login</Text>
       </TouchableOpacity>
+
+      <Text>API URL:</Text>
+      <Text style={{ fontSize: 12 }}>{apiUrl}</Text>
 
       <Text style={styles.signup}>
         Don't have an account?{" "}
